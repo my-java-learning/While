@@ -29,7 +29,14 @@ public class Main {
 
         } while (count != 6);
 
+        System.out.println("" + isEvenNumber(13));
+
 
 
     }
+
+    public static boolean isEvenNumber(int number){
+        return number % 2 == 0;
+    }
+
 }
