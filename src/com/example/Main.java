@@ -31,7 +31,17 @@ public class Main {
 
         System.out.println("" + isEvenNumber(13));
 
+        int number = 5;
+        int finishNumber = 20;
 
+        while(number <= finishNumber){
+            if(!isEvenNumber(number)){
+                number++;
+                continue;
+            }
+            System.out.println("Even number :" + number);
+            number++;
+        }
 
     }
 
