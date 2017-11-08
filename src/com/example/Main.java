@@ -33,6 +33,7 @@ public class Main {
 
         int number = 5;
         int finishNumber = 20;
+        int totalEven = 0;
 
         while(number <= finishNumber){
             if(!isEvenNumber(number)){
@@ -41,7 +42,11 @@ public class Main {
             }
             System.out.println("Even number :" + number);
             number++;
+            totalEven++;
+            if(totalEven == 5) break;
         }
+
+        System.out.println("Total number of even numbers is: " + totalEven);
 
     }
 
